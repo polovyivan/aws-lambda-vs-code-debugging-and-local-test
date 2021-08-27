@@ -21,9 +21,9 @@
           "json": {
             "Records": [
               {
-                "messageId": "19dd0b57-b21e-4ac1-bd88-01bbb068cb78",
+                "messageId": "1",
                 "receiptHandle": "MessageReceiptHandle",
-                "body": "Hello from SQS!",
+                "body": "Hello from SQS1!",
                 "attributes": {
                   "ApproximateReceiveCount": "1",
                   "SentTimestamp": "1523232000000",
@@ -39,9 +39,12 @@
             ]
           }
         },
-        "environmentVariables": {}
+        "environmentVariables": {
+          "BUCKET_ENDPOINT": "http://192.168.122.1:4566",
+          "BUCKET_NAME": "tutorial-bucket",
+          "REGION": "us-east-1"
+        }
       }
     }
   ]
 }
-

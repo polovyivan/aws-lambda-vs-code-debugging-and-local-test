@@ -12,3 +12,8 @@ Resources:
       Description: "Test"
       MemorySize: 128
       Timeout: 15
+      Environment:
+        Variables:
+          BUCKET_ENDPOINT: http://192.168.122.1:4566
+          BUCKET_NAME: tutorial-bucket
+          REGION: us-east-1
