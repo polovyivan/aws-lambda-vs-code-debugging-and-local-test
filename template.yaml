@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: "AWS::Serverless-2016-10-31"
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  testFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: aws-lambda-vs-code-debugging-and-local-test
+      Handler: main
+      Runtime: go1.x
+      CodeUri: /home/ivanpolovyi/projects/private/my_tutorials/aws_lambdas/aws-lambda-vs-code-debugging-and-local-test
+      Description: "Test"
+      MemorySize: 128
+      Timeout: 15
